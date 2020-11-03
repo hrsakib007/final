@@ -1,0 +1,1042 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utility Classes */
+
+.flex {
+  display: flex;
+}
+.text-center {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+
+/* Topbar */
+section.topbar {
+  background: #39312f;
+}
+section.topbar i {
+  color: #ff5821;
+  padding: 8px 4px 8px 0;
+  font-size: 14px;
+}
+section.topbar span {
+  color: white;
+  font-size: 14px;
+  padding-right: 15px;
+}
+section.topbar a {
+  color: #fff;
+  background: #ff5821;
+  padding: 8px 20px;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+}
+section.topbar a:hover {
+  background: #fc6b3a;
+}
+section.topbar > .left {
+  padding-left: 7rem;
+}
+section.topbar > .right {
+  margin-left: auto;
+  padding-right: 8rem;
+}
+
+/* Navbar */
+section.navbar > .left,
+section.navbar > .right {
+  padding: 20px 0;
+}
+section.navbar > .left a {
+  text-decoration: none;
+  color: #635551;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+section.navbar > .left {
+  padding-left: 7rem;
+}
+section.navbar > .right {
+  margin-left: auto;
+  padding-right: 8rem;
+}
+
+section.navbar nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+nav .mainMenu > li {
+  display: inline-block;
+}
+nav a {
+  margin: 0;
+  text-align: left;
+  padding: 12px 15px;
+  text-decoration: none;
+  position: relative;
+  color: rgb(82, 81, 81);
+  transition: 0.3s;
+  font-size: 14px;
+}
+nav i {
+  font-size: 10px;
+}
+nav a:hover {
+  color: #ff5821;
+}
+nav .subMenu,
+nav .superSubMenu {
+  position: absolute;
+  display: none;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid red;
+  transition: 0.5s;
+}
+nav .subMenu li {
+  position: relative;
+  padding: 8px 0;
+}
+nav .superSubMenu {
+  top: 0;
+  right: 180%;
+  transform: translate(100%, 0);
+}
+nav .mainMenu > li:hover .subMenu,
+nav .subMenu > li:hover .superSubMenu {
+  display: block;
+}
+
+/* Hero */
+section.hero {
+  background: url(Images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 470px;
+
+  color: white;
+  position: relative;
+}
+section.hero > .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(66, 66, 66);
+  opacity: 0.2;
+}
+section.hero > div {
+  padding: 9.5rem 7rem;
+}
+section.hero > div h1 {
+  font-size: 48px;
+  color: white;
+  opacity: 1 !important;
+  font-weight: bolder;
+}
+section.hero > div p {
+  font-size: 24px;
+  padding-top: 1rem;
+}
+/* Card */
+.card {
+  display: block;
+  overflow: hidden;
+}
+.card .card-1 .top .icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #ff5821;
+  color: white;
+  position: absolute;
+}
+.card .card-1 .top .icon i {
+  position: relative;
+  top: 30%;
+  left: 35%;
+}
+.card .card-1 .top .link a {
+  text-decoration: none;
+  background: #584b48;
+  padding: 8px 26px;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+}
+.card .card-1 .top .link a:hover {
+  background: #ff5821;
+  color: white;
+}
+.card .card-1 .top .link {
+  margin-left: 18px;
+  margin-top: 14px;
+}
+.card .card-1 .body {
+  width: 350px;
+  height: 486px;
+  background: #ff5821;
+  border-radius: 5px;
+  color: white;
+  margin-top: 13px;
+}
+.card .card-1 .body h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+  padding: 1.6rem 1.5rem;
+  padding-bottom: 0;
+}
+.card .card-1 .body p {
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 0rem 1.5rem;
+}
+.card .card-1 .body a {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 6px 30px 8px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  transition: 0.4s;
+}
+.card .card-1 .body a:hover {
+  background: white;
+  color: #ff5821;
+}
+.card .card-1 .body .button {
+  text-align: center;
+  padding-top: 20px;
+}
+.card .card-1 .body .button i {
+  font-size: 10px;
+}
+
+/* 2nd Card */
+section.hero .card-2 {
+  width: 224px;
+  height: 332px;
+  border-radius: 10px;
+  box-shadow: 3px 5px 14px 1px rgb(117, 117, 117);
+  background: white;
+  color: black;
+  position: absolute;
+  left: 37%;
+  top: 80%;
+}
+section.hero .card-2 .icon i {
+  padding-left: 100px;
+  padding-top: 45px;
+  color: #ff5821;
+  font-size: 40px;
+}
+section.hero .card-2 .content {
+  padding: 25px;
+}
+section.hero .card-2 .content h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+section.hero .card-2 .content p {
+  font-size: 17px;
+  color: rgb(99, 99, 99);
+  line-height: 1.5;
+}
+
+/* About */
+section.video {
+  width: 100%;
+  height: 800px;
+  margin-top: 23rem;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background: #fff9f7;
+}
+section.video .left {
+  width: 445px;
+  height: 700px;
+  margin-left: 7rem;
+  background: url(Images/blog-inside-post.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+section.video .left a {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ff5821;
+  color: white;
+}
+section.video .left i {
+  padding: 17px 0 0 20px;
+}
+section.video .right {
+  width: 570px;
+  height: 635px;
+  padding-left: 50px;
+}
+section.video .right h3 {
+  color: rgb(163, 163, 163);
+  font-size: 18px;
+  padding-bottom: 15px;
+  padding-top: 26px;
+}
+section.video .right h1 {
+  color: #554945;
+  font-size: 28px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+section.video .right p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgb(97, 96, 96);
+  padding-bottom: 15px;
+}
+section.video .right .ico {
+  margin-top: 35px;
+}
+section.video .right .ico .icon {
+  width: 110px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #fd7a4e;
+  color: #ff5821;
+  margin-right: 16px;
+  transition: 0.4s;
+}
+section.video .right .ico .icon i {
+  font-size: 32px;
+  padding: 17px 0 0 18px;
+}
+section.video .right .ico .icon:hover {
+  background: #ff5821;
+  color: white;
+}
+section.video .right .ico .content {
+  color: black;
+}
+section.video .right .ico .content h2:hover {
+  color: #ff5821;
+}
+
+/* Logo */
+section.logo {
+  padding: 3rem 0 2rem 11rem;
+}
+section.logo > div {
+  width: 185px;
+}
+section.logo > div img {
+  width: 110px;
+  height: 50px;
+}
+.dot {
+  padding-left: 42rem;
+}
+.dot i {
+  font-size: 10px;
+  color: silver;
+}
+
+/* Services */
+section.service {
+  width: 100%;
+  background: #fff9f7;
+  margin-top: 3rem;
+}
+section.service h1 {
+  color: #635551;
+  font-size: 32px;
+  font-weight: 500px;
+  padding-top: 3rem;
+}
+section.service p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem 8rem;
+  margin-bottom: 2rem;
+}
+section.service .service-card {
+  background: white;
+  text-align: center;
+  padding: 1rem 15px;
+  position: relative;
+  margin-right: 1.5rem;
+  height: 200px;
+  margin-bottom: 4rem;
+  box-shadow: 2px 1px 12px 1px rgb(139, 139, 139);
+}
+section.service .service-card .ss {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  padding: 20px;
+  color: white;
+  background: #ff5821;
+  transition: 0.3s;
+}
+section.service .service-card .ss:hover {
+  border: 1px solid #ff5821;
+  background: white;
+  color: #ff5821;
+}
+section.service .service-card h2 {
+  padding: 2rem 0 0.2rem 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+section.service .service-card p {
+  padding: 1rem 2rem;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* activities */
+section.card-1 {
+  width: 540px;
+  height: 340px;
+  background: url(Images/values-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 7rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  position: relative;
+}
+section.card-1 .content {
+  background: white;
+  margin: 0 1rem;
+  border-radius: 8px;
+  padding: 0 2rem;
+  position: relative;
+  top: 45%;
+  transition: 0.4s;
+}
+section.card-1 .content:hover {
+  background: #ff5821;
+  color: white;
+}
+section.card-1 .content:hover a {
+  color: white;
+}
+section.card-1 .content h2 {
+  padding: 1rem 0 0.3rem 0;
+}
+section.card-1 .content p {
+  padding: 0.5rem 0;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+section.card-1 .content a {
+  color: rgb(46, 46, 46);
+  text-decoration: none;
+  padding: 0.5rem 0 1rem 0;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+section.card-1 .content i {
+  font-size: 12px;
+}
+section.card-1 .content a:hover {
+  text-decoration: underline;
+}
+section.c2 {
+  background: url(Images/values-2.jpg) !important ;
+}
+section.c3 {
+  background: url(Images/values-3.jpg) !important ;
+}
+section.c4 {
+  background: url(Images/values-4.jpg) !important ;
+  margin-bottom: 3.5rem;
+}
+
+/* Testimonials */
+section.testimonials {
+  width: 100%;
+  height: 440px;
+  background: url(Images/testimonials-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  margin-bottom: 3rem;
+}
+section.testimonials > .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  opacity: 0.2;
+}
+
+section.testimonials .image {
+  padding-top: 4rem;
+}
+section.testimonials .image img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid silver;
+}
+section.testimonials h2 {
+  padding: 0.5rem 0;
+}
+section.testimonials p {
+  font-size: 20px;
+}
+
+/* Portfolio */
+section.portfolio h1 {
+  color: #635551;
+  font-size: 40px;
+}
+section.portfolio p {
+  padding: 1rem 6rem;
+  font-size: 20px;
+  line-height: 1.5;
+}
+section.portfolio .button {
+  padding-left: 33rem;
+  padding-top: 2rem;
+}
+section.portfolio .button .btn-1 a {
+  padding: 8px 16px;
+  border-radius: 30px;
+  background: #fcdfd7;
+  text-decoration: none;
+  color: rgb(255, 81, 0);
+}
+section.portfolio .button .btn-2 a {
+  padding: 8px 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.4s;
+  margin-left: 5px;
+}
+section.portfolio .button .btn-2 a:hover {
+  color: rgb(255, 81, 0);
+  background: #fcdfd7;
+}
+section.portfolio .images {
+  margin-left: 7rem;
+  margin-right: 5rem;
+  margin-top: 1.5rem;
+}
+section.portfolio .images section.cd-1 {
+  width: 380px;
+  height: 275px;
+  background: url(Images/portfolio-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 1.5rem;
+}
+section.portfolio .images section.cd-2 {
+  width: 380px;
+  height: 275px;
+  background: url(Images/portfolio-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.portfolio .images section.cd-3 {
+  width: 380px;
+  height: 275px;
+  background: url(Images/portfolio-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.portfolio .images section.cd-4 {
+  width: 380px;
+  height: 275px;
+  background: url(Images/portfolio-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.portfolio .images section.cd-5 {
+  width: 380px;
+  height: 275px;
+  background: url(Images/portfolio-5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.portfolio .images section.cd-6 {
+  width: 380px;
+  height: 275px;
+  background: url(Images/portfolio-6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.portfolio .images section.cd-7 {
+  width: 380px;
+  height: 275px;
+  background: url(Images/portfolio-7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.portfolio .images section.cd-8 {
+  width: 380px;
+  height: 275px;
+  background: url(Images/portfolio-8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.portfolio .images section.cd-9 {
+  width: 380px;
+  height: 275px;
+  background: url(Images/portfolio-9.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.portfolio .images section.cd-1 .text {
+  margin: 0 1rem;
+  background: white;
+  opacity: 0.6;
+  position: relative;
+  top: 60%;
+}
+section.portfolio .images section.cd-1 .text .left {
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+section.portfolio .images section.cd-1 .text .right {
+  padding-right: 1rem;
+  padding-top: 2.3rem;
+  margin-left: auto;
+}
+section.portfolio .images section.cd-1 .text .right i {
+  padding-right: 15px;
+  color: black;
+}
+section.portfolio .images section.cd-1 .text .right i:hover {
+  color: #ff5821;
+}
+section.portfolio .images section.cd-1 .text h1 {
+  color: black;
+  font-size: 20px;
+}
+section.portfolio .images section.cd-1 .text p {
+  color: black;
+  font-size: 17px;
+  padding-left: 0;
+}
+
+/* Team */
+section.team {
+  background: #fff9f7;
+  margin-top: 5rem;
+  height: 595px;
+}
+section.team .upper-text h1 {
+  color: #635551;
+  font-size: 40px;
+  padding-top: 3rem;
+}
+section.team .upper-text p {
+  padding: 1rem 6rem;
+  font-size: 20px;
+  line-height: 1.5;
+}
+section.team .people {
+  margin-left: 7rem;
+}
+section.team section.ppl-1 {
+  width: 255px;
+  height: 255px;
+  background: url(Images/team-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: visible;
+  border-radius: 5px 5px 0 0;
+  margin-right: 2rem;
+}
+section.team section.ppl-2 {
+  width: 255px;
+  height: 255px;
+  background: url(Images/team-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: visible;
+  border-radius: 5px 5px 0 0;
+  margin-right: 2rem;
+}
+section.team section.ppl-3 {
+  width: 255px;
+  height: 255px;
+  background: url(Images/team-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: visible;
+  border-radius: 5px 5px 0 0;
+  margin-right: 2rem;
+}
+section.team section.ppl-4 {
+  width: 255px;
+  height: 255px;
+  background: url(Images/team-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: visible;
+  border-radius: 5px 5px 0 0;
+  margin-right: 2rem;
+}
+section.team section.ppl-1 .social {
+  background: white;
+  top: 88%;
+  position: relative;
+  padding-left: 34px;
+  opacity: 0.6;
+}
+section.team section.ppl-1 .social i {
+  padding: 8px 18px;
+  transition: 0.4s;
+}
+section.team section.ppl-1 .social i:hover {
+  color: #ff5821;
+}
+section.team section.ppl-1 .details {
+  background: white;
+  top: 87%;
+  position: relative;
+  box-shadow: 1px 6px 14px 0px rgb(155, 155, 155);
+  border-radius: 0 0 5px 5px;
+}
+section.team section.ppl-1 .details h3 {
+  padding-top: 1rem;
+  padding-bottom: 0.3rem;
+}
+section.team section.ppl-1 .details p {
+  padding-bottom: 0.9rem;
+}
+
+/* Team */
+section.pricing .upper-text h1 {
+  color: #635551;
+  font-size: 40px;
+  padding-top: 3rem;
+}
+section.pricing .upper-text p {
+  padding: 1rem 6rem;
+  font-size: 20px;
+  line-height: 1.5;
+}
+section.pricing .pcard {
+  margin-left: 7rem;
+  margin-right: 5rem;
+  margin-top: 2rem;
+}
+section.pcard-1 {
+  width: 285px;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 5px;
+  margin-right: 1.5rem;
+}
+section.pcard-1 .top {
+  background: #f1f1f1;
+}
+section.pcard-1 .top p {
+  padding: 17px 20px;
+  font-size: 20px;
+}
+section.pcard-1 .middle p {
+  padding: 0.7rem 0;
+  font-size: 17px;
+}
+section.pcard-1 .middle .kata {
+  text-decoration: line-through;
+}
+section.pcard-1 .bottom {
+  background: #f1f1f1;
+  padding: 25px 20px;
+}
+section.pcard-1 .bottom a {
+  text-decoration: none;
+  color: white;
+  background: #ff5821;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+section.pcard-1 .bottom a:hover {
+  background: #fd7344;
+}
+
+section.pcard-2 .top {
+  background: #ff5821;
+  color: white;
+}
+
+/* FAQ */
+section.faq {
+  background: #fff9f7;
+  margin: 2rem;
+}
+section.faq .upper-text h1 {
+  color: #635551;
+  font-size: 40px;
+  padding-top: 3rem;
+}
+section.faq .upper-text p {
+  padding: 1rem 6rem;
+  font-size: 20px;
+  line-height: 1.5;
+}
+section.faq .ques {
+  padding-bottom: 2.5rem;
+}
+section.faq .ques-1 {
+  background: white;
+  padding: 20px 20px;
+  margin: 1.5rem 9rem;
+}
+section.faq .ques-1 .left i {
+  color: #f88660;
+  padding-right: 10px;
+}
+section.faq .ques-1 .left span {
+  font-size: 20px;
+}
+section.faq .ques-1 .left span:hover {
+  color: #ff5821;
+}
+section.faq .ques-1 .right {
+  margin-left: auto;
+}
+section.faq .ques-1 .right i:hover {
+  color: #ff5821;
+}
+
+/* Contanc */
+section.contact {
+  background: #ffffff;
+}
+section.contact .upper-text h1 {
+  color: #635551;
+  font-size: 40px;
+  padding-top: 3rem;
+}
+section.contact .upper-text p {
+  padding: 1rem 6rem;
+  font-size: 20px;
+  line-height: 1.5;
+}
+section.contact .ccard {
+  margin-left: 17.5rem;
+}
+section.contact .ccard-1 {
+  width: 255px;
+  box-shadow: 5px 5px 5px rgb(238, 238, 238);
+  margin-right: 1rem;
+}
+section.contact .ccard-1 .icon {
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+section.contact .ccard-1 {
+  border: 1px solid rgb(223, 223, 223);
+  background: white;
+}
+section.contact .ccard-1 .icon i {
+  font-size: 40px;
+  color: #ff5821;
+  border: 1px dotted #ff5821;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  padding: 13px 16px;
+}
+section.contact .ccard-1 .text {
+  padding: 30px 10px 25px 0;
+}
+section.contact .ccard-1 .text p {
+  line-height: 1.5;
+  padding-top: 10px;
+}
+
+.form {
+  background: white;
+  padding-bottom: 3.5rem;
+  border: 2px solid rgb(228, 228, 228);
+  margin-left: 17.5rem;
+  margin-right: 17rem;
+  margin-top: 2rem;
+  box-shadow: 5px 5px 5px rgb(238, 238, 238);
+}
+.form .name,
+.form .email {
+  width: 45%;
+}
+.form .name,
+.form .email {
+  padding: 10px 10px;
+  margin: 1rem;
+}
+.form .sub {
+  width: 95%;
+  margin: 1rem;
+  padding: 10px 10px;
+}
+.form .msg {
+  width: 95%;
+  height: 100px;
+  margin: 1rem;
+  padding: 10px 10px;
+  margin-bottom: 1.5rem;
+}
+.form a {
+  text-decoration: none;
+  color: white;
+  background: #ed3b00;
+  padding: 15px 30px;
+  margin-left: 20rem;
+  transition: 0.4s;
+}
+.form a:hover {
+  background: #fc8158;
+}
+
+/* Footer */
+section.footer {
+  background: #fff9f7;
+  padding-top: 3rem;
+  margin-top: 2rem;
+  padding-bottom: 2.5rem;
+}
+section.footer .footer-1 {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+section.footer .footer-1 h1 {
+  padding: 1rem 0;
+  font: 46px;
+}
+section.footer .footer-1 p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+section.footer .footer-1 .street {
+  padding-bottom: 1.5rem;
+}
+section.footer .footer-2 {
+  margin-right: 3rem;
+}
+section.footer .footer-2 h3 {
+  padding: 1rem 0;
+  font: 36px;
+}
+section.footer .footer-2 p {
+  padding: 0.6rem 10px;
+}
+section.footer .footer-2 a {
+  text-decoration: none;
+  color: black;
+}
+section.footer .footer-2 a:hover {
+  text-decoration: none;
+  color: #ff5821;
+  transition: 0.4s;
+}
+section.footer .footer-2 i {
+  color: #ff5821;
+}
+section.footer .footer-3 {
+  margin-left: 3rem;
+}
+section.footer .footer-3 h3 {
+  padding: 1rem 0;
+  font: 36px;
+}
+section.footer .footer-3 p {
+  line-height: 1.5;
+  padding-bottom: 1.5rem;
+}
+section.footer .footer-3 .subs {
+  padding: 10px 65px;
+}
+section.footer .footer-3 input {
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 60px;
+}
+section.footer .footer-3 a {
+  text-decoration: none;
+  background: #ec4007;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 60px;
+  margin-left: -6rem;
+  transition: 0.4s;
+}
+section.footer .footer-3 a:hover {
+  background: #ff4000;
+}
+section.footer .footer-3 button {
+  border: none;
+}
+
+/* copyright */
+section.copyright {
+  padding-left: 5rem;
+  padding-right: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+section.copyright .right {
+  margin-left: auto;
+}
+section.copyright .right .social i {
+  background: #ff4000;
+  color: white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 12px 13px;
+  margin-right: 10px;
+  transition: 0.4s;
+}
+section.copyright .right .social i:hover {
+  background: rgb(250, 110, 29);
+}
+
+.fixed-arrow i {
+  background: #ff4000;
+  color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 7px 8px;
+}
+.fixed-arrow {
+  position: fixed;
+  bottom: 2%;
+  right: 1%;
+}
